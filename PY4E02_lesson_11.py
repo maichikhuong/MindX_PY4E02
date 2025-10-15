@@ -2,20 +2,20 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 
 # Cach 1
-# from connect_params import SERVER, DATABASE, USERNAME, PASSWORD, DRIVER, PORT, API_KEY
-# print(f"My params is: {SERVER} {DATABASE} {USERNAME} {PASSWORD} {DRIVER}")
+from connect_params import SERVER, DATABASE, USERNAME, PASSWORD, DRIVER, PORT, API_KEY
+print(f"My params is: {SERVER} {DATABASE} {USERNAME} {PASSWORD} {DRIVER}")
 
-# Cach 2
-import os
-from dotenv import load_dotenv
+# # Cach 2
+# import os
+# from dotenv import load_dotenv
 
-SERVER = os.environ.get('SERVER')
-DATABASE = os.environ.get('DATABASE')
-USERNAME = os.environ.get('USERNAME')
-PASSWORD = os.environ.get('PASSWORD')
-DRIVER = os.environ.get('DRIVER')
+# SERVER = os.environ.get('SERVER')
+# DATABASE = os.environ.get('DATABASE')
+# USERNAME = os.environ.get('USERNAME')
+# PASSWORD = os.environ.get('PASSWORD')
+# DRIVER = os.environ.get('DRIVER')
 
-print(f"My params is: {SERVER} {DRIVER} {USERNAME} {PASSWORD} {DRIVER}")
+# print(f"My params is: {SERVER} {DRIVER} {USERNAME} {PASSWORD} {DRIVER}")
 
 
 
